@@ -1,0 +1,83 @@
+body {
+  background-color: #2e2e2e;
+  margin: 0;
+  padding: 0;
+}
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin: 2% auto;
+  box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+  padding: 20px;
+  background-color: #555353;
+}
+
+.settings {
+  width: 50%;
+  min-height: 200px;
+  /* Width of container */
+  margin: 2% auto; /* Center align */
+  padding: 2%;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+/* Style for form elements */
+
+label {
+  margin-bottom: 10px;
+  /* Add margin */
+  display: block;
+}
+input[type="text"],
+select {
+  width: 100%; /* Take up full width */
+  padding: 10px; /* Add padding for input fields */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in width */
+  margin-bottom: 20px; /* Add spacing between input fields */
+}
+input[type="checkbox"],
+select {
+  display: inline-block;
+}
+.buttons {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between buttons */
+  margin-top: 20px;
+}
+button {
+  width: 30%; /* Take up full width */
+  padding: 12px; /* Add padding for buttons */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #fff; /* Blue background color */
+  color: #000; /* White text color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+button:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+}
+button:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+button#saveBtn {
+  background-color: rgb(211, 25, 25); /* Green background */
+  color: #fff; /* White text */
+}
+
+button#cancelBtn {
+  background-color: rgb(211, 25, 25);
+  color: #fff; /* Gray background */
+}
+
+button#deleteBtn {
+  background-color: rgb(211, 25, 25); /* Red background */
+  color: #fff; /* White text */
+}

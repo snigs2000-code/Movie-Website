@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="siginin.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <h1 class="logo">flakes</h1>
+        </div>
+      </div>
+    </div>
+    <div class="overlay">
+      <form id="loginForm">
+        <div class="con">
+          <header class="head-form">
+            <h2>LOG IN</h2>
+            <p>login here using your username and password</p>
+          </header>
+          <br />
+          <div class="field-set">
+            <span class="input-item">
+              <i class="fa fa-user-circle"></i>
+            </span>
+            <!--   user name Input-->
+            <input
+              class="form-input"
+              id="txt-input"
+              type="text"
+              placeholder="@UserName"
+              required
+            />
+
+            <br />
+            <span class="input-item">
+              <i class="fa fa-key"></i>
+            </span>
+            <!--   Password Input-->
+            <input
+              class="form-input"
+              type="password"
+              placeholder="Password"
+              id="pwd"
+              name="password"
+              required
+            />
+            <span>
+              <i
+                class="fa fa-eye"
+                aria-hidden="true"
+                type="button"
+                id="eye"
+              ></i>
+            </span>
+            <br />
+            <button class="log-in" onclick="redirectToIndex()">Log In</button>
+          </div>
+          <div class="other">
+            <button class="btn submits frgt-pass">Forgot Password</button>
+            <button class="btn submits sign-up-btn" onclick="toggleForm()">
+              Sign Up
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+        <form id="signUpForm" style="display: none;">
+          <!-- Sign Up form content goes here -->
+        <div class="con">
+          <header class="head-form">
+            <h2>SIGN UP</h2>
+            <p>Create a new account</p>
+          </header>
+          <br />
+          <div class="field-set">
+            <span class="input-item">
+              <i class="fa fa-envelope"></i>
+            </span>
+            <input
+              class="form-input"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <br/>
+            <span class="input-item">
+              <i class="fa fa-user "></i>
+            </span>
+            <!-- Full Name Input -->
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Full Name"
+              required
+            />
+            
+
+            <br />
+            <span class="input-item">
+              <i class="fa fa-key"></i>
+            </span>
+            <!-- Password Input-->
+            <input
+              class="form-input"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <br/>
+            <button class="btn submits login-btn" onclick="toggleForm()">
+              Sign Up
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </button>
+          
+            
+            
+          </div>
+         
+          
+        </form>
+        
+          
+        </div>
+        <div class="footer">
+          <h2> Question? call 000-000-000-0001 </h2>
+          <div class="row">
+              <div class="col">
+                  <a href="#"> FAQ </a>
+                  <a href="#"> Investor Relations </a>
+                  <a href="#"> Privacy </a>
+                  <a href="#"> Speed Test </a>
+              </div>
+              <div class="col">
+                  <a href="#"> Help Center </a>
+                  <a href="#"> Jobs </a>
+                  <a href="#"> Cookie Preferences </a>
+                  <a href="#"> Legal Notices </a>
+              </div>
+              <div class="col">
+                  <a href="#"> Account </a>
+                  <a href="#"> Ways to Watch </a>
+                  <a href="#"> Corporate Information </a>
+                  <a href="#"> Only on Netflix </a>
+              </div>
+              <div class="col">
+                  <a href="#"> Media Center </a>
+                  <a href="#"> Terms of Use </a>
+                  <a href="#"> Contact Us </a>
+              </div>      
+          </div>
+    
+
+    <script src="signin.js"></script>
+  </body>
+</html>

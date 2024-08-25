@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="setting.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <h1 class="logo">flakes</h1>
+        </div>
+      </div>
+    </div>
+    <div class="settings">
+      <h2>Edit Profile</h2>
+      <form id="profileForm">
+        
+        <label for="language">Language:</label>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="es">Spanish</option>
+          <option value="hi">Hindi</option>
+          <option value="ge">German</option>
+          <option value="ch">Chinise</option>
+          <!-- Add more options as needed -->
+        </select>
+        <h3>Maturity Settings:</h3>
+        <div>
+          <input type="checkbox" id="maturityRatings" />
+          <label for="maturityRatings">Show Maturity Ratings</label>
+          <br/>
+          <button type="button" id="edit">EDIT</button>
+        </div>
+        <div>
+          <input type="checkbox" id="autoPlayNextEpisode" />
+          <label for="autoPlayNextEpisode">Auto Play Next Episode in a series on all devices</label>
+        </div>
+        <div>
+          <input type="checkbox" id="autoPlayPreviews" />
+          <label for="autoPlayPreviews">Auto Play Previews while Browsing on all devices</label>
+        </div>
+        <div class="buttons">
+          <button type="submit" id="saveBtn">Save</button>
+          <button type="button" id="cancelBtn">Cancel</button>
+          <button type="button" id="deleteBtn">Delete Profile</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <h2> Question? call 000-000-000-0001 </h2>
+      <div class="row">
+          <div class="col">
+              <a href="#"> FAQ </a>
+              <a href="#"> Investor Relations </a>
+              <a href="#"> Privacy </a>
+              <a href="#"> Speed Test </a>
+          </div>
+          <div class="col">
+              <a href="#"> Help Center </a>
+              <a href="#"> Jobs </a>
+              <a href="#"> Cookie Preferences </a>
+              <a href="#"> Legal Notices </a>
+          </div>
+          <div class="col">
+              <a href="#"> Account </a>
+              <a href="#"> Ways to Watch </a>
+              <a href="#"> Corporate Information </a>
+              <a href="#"> Only on Netflix </a>
+          </div>
+          <div class="col">
+              <a href="#"> Media Center </a>
+              <a href="#"> Terms of Use </a>
+              <a href="#"> Contact Us </a>
+          </div>      
+      </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
+  </body>
+</html>
